@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "702626417664",
+    "firebase_url": "https://dechilent.firebaseio.com",
+    "project_id": "dechilent",
+    "storage_bucket": "dechilent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702626417664:android:4825a274de363445",
+        "android_client_info": {
+          "package_name": "id.arv.dechilent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702626417664-d0k4gl5tejktpduc2tgifavvkpqqpfnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.arv.dechilent",
+            "certificate_hash": "83f9321cac865c91e0f1f568808acb2ccd3fe7ff"
+          }
+        },
+        {
+          "client_id": "702626417664-jr4nr2phi6je9mcdbkov9u5dnf57v1se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.arv.dechilent",
+            "certificate_hash": "1e45a90090c1db805a489505284767e4c1590fb1"
+          }
+        },
+        {
+          "client_id": "702626417664-i2rf1ubpril6iupp9309f2t19guj1j8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.arv.dechilent",
+            "certificate_hash": "daf1262783612ca2429f43f5ee4041434fdd84f1"
+          }
+        },
+        {
+          "client_id": "702626417664-b7qkdgngkj287704dfgmdp4bt61bva4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUhEJzQOlh9cFmXx36YS-rkE22yq7JOCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702626417664-b7qkdgngkj287704dfgmdp4bt61bva4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

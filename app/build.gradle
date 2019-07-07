@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "id.arv.dechilent"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    // BUTTERKNIFE
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //FIREBASE
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+    implementation 'com.google.firebase:firebase-firestore:18.2.0'
+    implementation 'com.google.firebase:firebase-storage:16.1.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    //OTHERS
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation ('com.alimuzaffar.lib:pinentryedittext:1.3.10')
+    implementation 'gun0912.ted:tedpermission:2.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.airbnb.android:lottie:2.7.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.pixplicity.letterpress:library:1.0'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation 'net.crosp.libs.android:circle-time-view:1.0.6'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

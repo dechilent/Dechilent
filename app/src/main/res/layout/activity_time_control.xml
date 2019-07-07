@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".activity.TimeControlActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+        <net.crosp.libs.android.circletimeview.CircleTimeView
+            android:id="@+id/circle_timer_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            app:ctvCircleButtonColor="#2e65f7"
+            app:ctvCircleColor="#2e65f7"
+            app:ctvCircleHandButtonRadius="10dp"
+            app:ctvCirclePressedButtonColor="#189215"
+            app:ctvCircleStrokeWidth="1dp"
+            app:ctvCurrentTimeInSeconds="160"
+            app:ctvHighlightMarkLineColor="#189215"
+            app:ctvMarkLineColor="#8BC34A"
+            app:ctvMarginTopLabel="22dp"
+            app:ctvMarkLineWidth="3dp"
+            app:ctvMarkSize="10dp"
+            app:ctvMinutesMarkCount="120"
+            app:ctvMultiLapRotation="true"
+            app:ctvPaddingInnerRadius="15dp"
+            app:ctvPaddingQuarterNumber="5dp"
+            app:ctvQuarterMarkSize="20dp"
+            app:ctvQuarterNumberColor="#8BC34A"
+            app:ctvQuarterNumberTextSize="16sp"
+            app:ctvShowLaps="false"
+            app:ctvTimeFormat="minutes_hours"
+            app:ctvTimeMode="manual"
+            app:ctvTimeNumberColor="#189215"
+            app:ctvTimeNumbersTextSize="55sp"
+            app:ctvLabelText="Hour : Minute"
+            app:ctvLabelTextColor="@color/secondaryTextColor"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_blue"
+            android:orientation="horizontal">
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/btn_start"
+                style="@style/FontTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MULAI"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
